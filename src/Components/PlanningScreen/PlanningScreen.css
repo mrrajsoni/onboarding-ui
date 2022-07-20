@@ -1,0 +1,27 @@
+.selectionbox-container {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.selectionbox {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 1px solid #eeeded;
+}
+
+.selectionbox > img {
+  width: 42px;
+  margin-bottom: 10px;
+  margin-left: -12px;
+}
+
+.form-container {
+  margin-top: 35px;
+}
+
+.selectionbox:hover {
+  outline: 1px solid #664de5;
+}

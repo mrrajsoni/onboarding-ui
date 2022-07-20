@@ -1,0 +1,31 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  color: rgb(81, 81, 81);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.two-inputs-container {
+  display: flex;
+}
+
+.url-disabled-input {
+  width: 55%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.no-left-border {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+span.label2 {
+  color: #dadada;
+}

@@ -1,0 +1,54 @@
+.steps-conatiner {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.steps-conatiner > div {
+  position: relative;
+}
+
+.steps-conatiner > div:not(:last-child)::before {
+  content: "";
+  height: 1px;
+  width: 150%;
+  background: #eeeded;
+  position: absolute;
+  top: 46%;
+  left: 85%;
+  z-index: -1;
+}
+
+.steps-conatiner > div:not(:last-child)::after {
+  content: "";
+  height: 1px;
+  background: #664de5;
+  position: absolute;
+  top: 46%;
+  left: 85%;
+  z-index: -1;
+}
+
+.steps-conatiner > div.half-border:not(.inactive)::after {
+  width: 75%;
+}
+
+.steps-conatiner > div.active.completed:not(:last-child)::after,
+.steps-conatiner > div.inactive.completed:not(.active)::after {
+  width: 150%;
+}
+
+.active svg circle,
+.completed svg circle {
+  fill: #664de5;
+}
+
+.active svg polyline,
+.completed svg polyline,
+.active svg path,
+.completed svg path,
+.active svg line,
+.completed svg line {
+  stroke: #fff;
+}
